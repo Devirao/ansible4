@@ -2,6 +2,5 @@
 - hosts: all
   tasks:
   - name: ping to the module
-   
   ping:
 
