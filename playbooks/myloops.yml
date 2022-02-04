@@ -4,9 +4,10 @@
   tasks:
   - name: install git,wget,tree on nodes
     apt:
-  name: "{{ item }}"
-  with_items:
-    git:
-    wget:
-    tree:
+      name: "{{ item }}"
+      state: present
+    with_items:
+     - git
+     - wget
+     - tree
       
